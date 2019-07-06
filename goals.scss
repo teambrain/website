@@ -1,0 +1,34 @@
+@import "./common";
+@import "material-components-web/material-components-web";
+
+.mdc-top-app-bar--prominent-fixed-adjust {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 500px;
+  display: block;
+}
+
+.footer {
+  background-color: #f3efee;
+  box-sizing: border-box;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 200px; /* Height of the footer */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
