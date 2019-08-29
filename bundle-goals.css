@@ -8454,7 +8454,7 @@ a.mdc-list-item {
 
 .member-grid {
   display: grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
 }
 
