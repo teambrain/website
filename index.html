@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="https://material.io/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arsenal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bundle-goals.css">
 </head>
@@ -18,56 +17,236 @@
 <div id="container">
     <header class="mdc-top-app-bar mdc-top-app-bar--prominent mdc-elevation--z4">
         <div class="mdc-top-app-bar__row">
-            <section class="mdc-top-app-bar__section">
-                <h4 class="mdc-typography--headline4 mdc-top-app-bar__title">Team BRAIN</h4>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <h4 class="mdc-typography--headline2 mdc-top-app-bar__title">Team BRAIN</h4>
             </section>
+            <div class="mdc-tab-bar mdc-top-app-bar__section--align-end" role="tablist">
+                <div class="mdc-tab-scroller">
+                    <div class="mdc-tab-scroller__scroll-area">
+                        <div class="mdc-tab-scroller__scroll-content">
+                            <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+						<span class="mdc-tab__content">
+							<span class="mdc-tab__text-label">Goals</span>
+						</span>
+                                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+							<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+						</span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                            <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+						<span class="mdc-tab__content">
+							<span class="mdc-tab__text-label">Research</span>
+						</span>
+                                <span class="mdc-tab-indicator">
+							<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+						</span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                            <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+						<span class="mdc-tab__content">
+							<span class="mdc-tab__text-label">Members</span>
+						</span>
+                                <span class="mdc-tab-indicator">
+							<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+						</span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="mdc-top-app-bar--prominent-fixed-adjust">
-        <div class="research-problem">
-            <h4 class="mdc-typography--headline4">Alzheimer's Disease</h4>
-            <p class="mdc-typography--body1">
-
-                <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/b29e8cdf-hong-kong-peak-lights/NighttimeCityLights.jpg"
-                     alt="city picture" class="image">
+    <section class="main-content mdc-top-app-bar--prominent-fixed-adjust">
+        <div class="mdc-card research-problem-card goals-tab__member">
+            <div class="mdc-card__primary research-problem-card__primary">
+                <h2 class="mdc-typography--headline4"><strong>Alzheimer's Disease</strong></h2>
+                <h3 class="mdc-typography--headline5">Research Problem</h3>
+            </div>
+            <div class="mdc-card__media mdc-card__media--16-9 demo-card__media"
+                 style="background-image: url(&quot;https://upload.wikimedia.org/wikipedia/commons/9/9d/PET_scan-normal_brain-alzheimers_disease_brain.PNG&quot;);"></div>
+            <div class="mdc-card__secondary research-problem-card__secondary mdc-typography--headline6">
+                Well established as the most common form of dementia, Alzheimer disease affects the lives of nearly 5 million Americans. (Alzheimer’s Association, 2016). Dementia is defined as the loss of cognitive functioning impairs daily life activities.
+                Alzheimer disease is characterised symptomatically by an initial mild memory loss that can progress to more severe cognitive decline.
+                Neuroanatomically, the disease is characterized by abnormal clumps, known as amyloid beta plaques and neurofibrillary tangles. The only way to officially confirm a clinical diagnosis is post-mortem through an autopsy.
                 <br>
-                Alzheimer’s disease is a neurodegenerative disease that affects more than 50 million people per year.
-                I have to fill up a whole lot of words on here so that I can get a sort of preview on the words on here.
-                I could use lorem ipsum dolor, but that stuff doesn’t make much sense.
-            </p>
+                Much is still unknown about this neurological ailment. Previously, scientists believed that targeting the amyloid beta plaques (that are observed in the brains of patients with the clinical diagnosis) would lead to success.
+                However, studies have shown that many older adults have an accumulation of amyloid-beta plaques present in their brains and still do not develop symptoms of Alzheimer's disease.
+            </div>
+            <div class="mdc-card__secondary research-problem-card__secondary mdc-typography--body1">
+                Medications for Memory. (n.d.). Alzheimer’s Association. Retrieved from
+                <a href="https://alz.org/alzheimers-dementia/treatments/medications-for-memory" target="_blank">https://alz.org/alzheimers-dementia/treatments/medications-for-memory</a>
+            </div>
         </div>
 
-        <div class="research-question">
-            <h4 class="mdc-typography--headline4">Behind Raised Arms Insulin (BRAIN)</h4>
-            <p class="mdc-typography--body1">
-                This is the research question. Alzheimer’s disease is a neurodegenerative disease that affects more than
-                50
-                million people per year.
-                I have to fill up a whole lot of words on here so that I can get a sort of preview on the words on here.
-                I could use lorem ipsum dolor, but that stuff doesn’t make much sense.
-            </p>
+        <div class="mdc-card research-question-card goals-tab__member">
+            <div class="mdc-card__primary research-question-card__primary">
+                <h2 class="mdc-typography--headline4"><strong>Behind Raised Arms Insulin (BRAIN)</strong></h2>
+                <h3 class="mdc-typography--headline5">Research Question and Scope</h3>
+            </div>
+            <div class="mdc-card__secondary research-question-card__secondary mdc-typography--headline6">
+                How can we slow the progression of Alzheimer’s disease in those that already have it?
+                <br>
+                <strong>THIS CARD IS TOO SMALL</strong>
+            </div>
         </div>
 
+        <div class="mdc-card research-tab__member">
+            <h1 class="mdc-typography--headline4">Team Timeline</h1>
 
+            <div class="mdc-slider mdc-slider--discrete team-timeline__slider" tabindex="0" role="slider"
+                 aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"
+                 aria-label="Select Value">
+                <div class="mdc-slider__track-container">
+                    <div class="mdc-slider__track"></div>
+                </div>
+                <div class="mdc-slider__thumb-container">
+                    <div class="mdc-slider__pin team-timeline__slider__slider-pin">
+                        <span class="mdc-slider__pin-value-marker"></span>
+                    </div>
+                    <svg class="mdc-slider__thumb" width="21" height="21">
+                        <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                    </svg>
+                    <div class="mdc-slider__focus-ring"></div>
+                </div>
+            </div>
+
+            <div class="mdc-typography team-timeline__detail">
+                <h5 class="mdc-typography--headline5 team-timeline__detail-header">Fall 2019</h5>
+                <h6 class="mdc-typography--headline6 team-timeline__detail-body">
+                    Develop a specific research question<br>
+                    Organize Team<br>
+                    Begin collecting and reviewing literature<br>
+                    Complete initial draft of research proposal
+                </h6>
+            </div>
+
+            <div class="mdc-typography--body1">Taken from
+                <a href="http://www.gemstone.umd.edu/academics/four-years.html" target="_blank">http://www.gemstone.umd.edu/academics/four-years.html</a>
+            </div>
+        </div>
+
+        <section class="member-grid">
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Benjamin Wu</h2>
+                    <h3 class="mdc-typography--headline6">Web Liaison</h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Mahalet Samson</h2>
+                    <h3 class="mdc-typography--headline6">Web Liaison</h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Danika Lee</h2>
+                    <h3 class="mdc-typography--headline6">Mentor Liaison</h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Madhu Nallani</h2>
+                    <h3 class="mdc-typography--headline6">Team Liaison</h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Rejoyce Mgboji</h2>
+                    <h3 class="mdc-typography--headline6">Team Clerk</h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Katherine Lord</h2>
+                    <h3 class="mdc-typography--headline6">Ombudswoman</h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Zofia Cieslak</h2>
+                    <h3 class="mdc-typography--headline6"><strong>INSERT HERE</strong></h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Anjali Kubli</h2>
+                    <h3 class="mdc-typography--headline6"><strong>INSERT HERE</strong></h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Beatrice Acha</h2>
+                    <h3 class="mdc-typography--headline6"><strong>INSERT HERE</strong></h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Danny Hemani</h2>
+                    <h3 class="mdc-typography--headline6">Student Liaison</h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Michael Park</h2>
+                    <h3 class="mdc-typography--headline6"><strong>INSERT HERE</strong></h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Molly Ding</h2>
+                    <h3 class="mdc-typography--headline6"><strong>INSERT HERE</strong></h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Kelsey Corlett-Rivera</h2>
+                    <h3 class="mdc-typography--headline6">Team Librarian</h3>
+                </div>
+            </div>
+
+            <div class="mdc-card member-card members-tab__member">
+                <div class="mdc-card__primary member-card__primary">
+                    <h2 class="mdc-typography--headline4">Dr. J. Carson Smith</h2>
+                    <h3 class="mdc-typography--headline6">Team Mentor</h3>
+                </div>
+            </div>
+        </section>
     </section>
-    <div class="footer">
-        <a href="http://www.honors.umd.edu" target="_blank">
-            <img src="assets/honors_college.png" width="90" height="90">
-        </a>
-        <a href="http://www.gemstone.umd.edu" target="_blank">
-            <img src="assets/gemstone.png" width="90" height="90">
-        </a>
 
-        <p class="mdc-typography--subtitle1">
-            Team BRAIN is a class of 2022 research team in the University of Maryland’s Gemstone Honors Program.
+    <div class="footer">
+        <section class="footer__logo-container">
+            <a href="http://www.gemstone.umd.edu" target="_blank">
+                <img src="assets/gemstone.png" width="90" height="90">
+            </a>
+            <a href="http://www.honors.umd.edu" target="_blank">
+                <img src="assets/honors_college.png" width="90" height="90">
+            </a>
+        </section>
+
+        <p class="mdc-typography--headline6 footer__text">
+            Team BRAIN is a research team within the University of Maryland’s Gemstone Program, Class of 2022.
             <br>
-            Twitter / Facebook
-            Email: teambananas@hooligans.coma
+            Contact us at <strong>Insert Email Here@gmail.com</strong>
+            <br>
         </p>
     </div>
 </div>
+
+<script src="bundle-index.js" async></script>
 </body>
-
-
 </html>

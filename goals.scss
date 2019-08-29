@@ -1,9 +1,39 @@
+//TODO fix bottom blank space on mobile
+
 @import "./common";
 @import "material-components-web/material-components-web";
+
+.mdc-top-app-bar__title {
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 0;
+}
 
 .mdc-top-app-bar--prominent-fixed-adjust {
   padding-left: 40px;
   padding-right: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mdc-top-app-bar__section--align-end {
+  background-color: rgba(108, 65, 182, 0.48);
+  @include mdc-tab-states-color($mdc-theme-secondary);
+  --mdc-theme-primary: white;
+  @include mdc-tab-text-label-color(white);
+}
+
+.mdc-tab-bar {
+  width: auto;
+  display: block;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 10px;
 }
 
 #container {
@@ -13,9 +43,43 @@
   display: block;
 }
 
+.mdc-card {
+  margin-top: 16px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.mdc-card__primary, .mdc-card__secondary {
+  padding: 16px;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+}
+
+.team-timeline__slider {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-timeline__slider__slider-pin {
+  display: none;
+}
+
+.team-timeline__detail-header, .team-timeline__detail-body {
+  margin-top: 0;
+}
+
+.mdc-card__secondary {
+  //padding-top: 0;
+  padding-bottom: 8px;
+}
+
 .image {
   width: 100%;
   height: auto;
+  max-width: 500px;
 }
 
 .footer {
@@ -28,6 +92,16 @@
   bottom: 0;
   left: 0;
   height: 200px; /* Height of the footer */
+}
+
+.footer__logo-container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: fit-content;
+}
+
+.footer__text {
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6, p {

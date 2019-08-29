@@ -32,18 +32,18 @@ module.exports = [
                 use: getStyleUse('bundle-goals.css')
             }]
         },
-    }/*,
+    },
     {
-        entry: "./login.js",
+        entry: "./index.js",
         output: {
-            filename: "bundle-login.js"
+            filename: "bundle-index.js"
         },
         module: {
             loaders: [{
-                test: /login.js$/,
+                test: /index.js$/,
                 loader: 'babel-loader',
                 query: {presets: ['env']}
             }]
         },
-    }*/
+    }
 ];
