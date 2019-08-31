@@ -8478,6 +8478,10 @@ a.mdc-list-item {
   margin-top: 0;
 }
 
+.research-tab__member, .members-tab__member {
+  display: none;
+}
+
 .team-timeline__slider {
   width: 90%;
   margin-left: auto;

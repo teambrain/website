@@ -2473,6 +2473,7 @@ var timeline = [fall2019, spring2020, fall2020, spring2021, fall2021, spring2022
 var tabBar = document.querySelector('.mdc-tab-bar');
 if (tabBar != null) {
     tabBar.addEventListener('MDCTabBar:activated', function (data) {
+        window.scrollTo(0, 0);
         var tabIndex = data["detail"]["index"];
 
         if (tabIndex === 0) {
