@@ -13,7 +13,7 @@
 .mdc-top-app-bar--prominent-fixed-adjust {
   padding-left: 40px;
   padding-right: 40px;
-  max-width: 800px;
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,13 +39,25 @@
 #container {
   min-height: 100%;
   position: relative;
-  padding-bottom: 500px;
+  padding-bottom: 30%;
   display: block;
+}
+
+.footer {
+  //background-color: #f3efee;
+  box-sizing: border-box;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 10%;
 }
 
 .mdc-card {
   margin-top: 16px;
-  max-width: 800px;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -83,22 +95,11 @@
 .image {
   width: 100%;
   height: auto;
-  max-width: 500px;
-}
-
-.footer {
-  background-color: #f3efee;
-  box-sizing: border-box;
-  position: absolute;
-  padding-top: 10px;
-  padding-left: 20px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  height: 300px; /* Height of the footer */
+  max-width: 100%;
 }
 
 .footer__logo-container {
+  margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
   max-width: fit-content;

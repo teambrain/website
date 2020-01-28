@@ -25,6 +25,9 @@ let spring2020 = [
         'Identify and describe data collection method',
         'Submit IRB application',
         'Continue to read and summarize literature',
+        'Finish training and pilot training',
+        'Obtain assays and test run',
+        'Recruit participants',
     ]
 ];
 
@@ -35,6 +38,9 @@ let fall2020 = [
         'Make our thesis outline',
         'Identify experts to help guide the project',
         'Present progress at the Fall Colloquia',
+        'Perform baseline testing',
+        'Continue participant recruitment',
+        'Perform post-6-month testing',
     ]
 ];
 
@@ -45,6 +51,8 @@ let spring2021 = [
         'Write a draft of chapters 1-3 of our thesis',
         'Send draft to experts for comments and recommendations',
         'Present progress with a poster on Undergraduate Research Day',
+        'Continue participant recruitment',
+        'Continue post-6-month testing',
     ]
 ];
 
@@ -54,7 +62,8 @@ let fall2021 = [
         'Complete data analysis',
         'Redraft thesis based on completed research and suggestions',
         'Prepare presentation for rehearsal',
-        'Submit names of experts to be discussants'
+        'Submit names of experts to be discussants',
+        'Finish post-6-month testing',
     ]
 ];
 
@@ -90,12 +99,18 @@ if (tabBar != null) {
     });
 
     const mdcTabBar = new MDCTabBar(tabBar);
-    switchTabs(goalsElements);
 }
 
 var slider = new MDCSlider(document.querySelector('.mdc-slider'));
+switchSlider(3);
 slider.listen('MDCSlider:change', (event) => {
-    let timelineData = timeline[slider.value];
+    console.log(slider.value);
+    switchSlider(slider.value)
+});
+
+function switchSlider(newValue) {
+    slider.value = newValue;
+    let timelineData = timeline[newValue];
     let bodyText = '';
     timelineData[1].forEach(description => {
        bodyText += description + '<br>';
@@ -103,7 +118,7 @@ slider.listen('MDCSlider:change', (event) => {
 
     document.querySelector('.team-timeline__detail-header').innerHTML = timelineData[0];
     document.querySelector('.team-timeline__detail-body').innerHTML = bodyText;
-});
+}
 
 function switchTabs(correctList) {
     elementsByTab.forEach(list => {
